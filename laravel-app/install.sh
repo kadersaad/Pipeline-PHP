@@ -66,7 +66,7 @@ sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv
 sudo ./aws/install
 # Install Kompose
 echo "--------------------Installing Kompose--------------------"
-wget https://github.com/kubernetes/kompose/releases/download/v1.26.1/kompose_1.26.1_amd64.deb # Replace 1.26.1 with latest tag
+wget https://github.com/kubernetes/kompose/releases/download/v1.26.1/kompose_1.26.1_amd64.deb
 sudo apt install ./kompose_1.26.1_amd64.deb
 #Add docker to sudo group
 echo "--------------------Add Docker to Sudo group--------------------"
