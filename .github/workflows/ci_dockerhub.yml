@@ -30,3 +30,14 @@ jobs:
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/$REPOSITORY:$IMAGE_TAG .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/$REPOSITORY:$IMAGE_TAG
 
+#      - name: SSH into Machine And Update WebSite
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secrets.IP_PUBLIC }}
+#          username: ${{ secrets.SSH_USERNAME }}
+#          key: ${{ secrets.SSH_PRIVATE_KEY }}
+#          port: 22
+#          script: |
+#            cd /home/vagrant/workspace/Jenkins_Slaves/JenkinsSlave00/workspace/laravel-app/laravel-app
+#            ansible-playbook playbook.yml
+
